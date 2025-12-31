@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="boc">
+        <div class="container">
+            <input type="text" placeholder="0" class = "display" disabled>
+            <div>
+                <button style="background-color: rgb(255, 0, 0);" onclick="clearAll()">AC</button>
+                <button style="background-color: red;" onclick="delLast()">Del</button>
+                <button style="background-color: rgb(20, 102, 255);" onclick="addnum('%')">%</button>
+                <button style="background-color: rgb(20, 102, 255);" onclick="addnum('/')">/</button>
+            </div>
+            <div>
+                <button onclick="addnum(7)">7</button>
+                <button onclick="addnum(8)">8</button>
+                <button onclick="addnum(9)">9</button>
+                <button style="background-color: rgb(20, 102, 255);" onclick="addnum('*')">X</button>
+            </div>
+            <div>
+                <button onclick="addnum(4)">4</button>
+                <button onclick="addnum(5)">5</button>
+                <button onclick="addnum(6)">6</button>
+                <button style="background-color: rgb(20, 102, 255);" onclick="addnum('-')">-</button>
+            </div>
+            <div>
+                <button onclick="addnum(1)">1</button>
+                <button onclick="addnum(2)">2</button>
+                <button onclick="addnum(3)">3</button>
+                <button style="background-color: rgb(20, 102, 255);" onclick="addnum('+')">+</button>
+            </div>
+            <div>
+                <button onclick="addnum('00')">00</button>
+                <button onclick="addnum('0')">0</button>
+                <button onclick="addnum('.')">.</button>
+                <button style="background-color: green;" onclick="calculate()">=</button>
+            </div> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
